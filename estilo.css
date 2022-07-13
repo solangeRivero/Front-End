@@ -1,0 +1,423 @@
+/* Fuentes que utilice para la pagina */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&family=Rubik&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#inicio {
+    background: url("imagen/fondo.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+#inicio .contenido header {
+    background-color: rgba(0, 0, 0, .8);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+}
+
+#inicio .contenido header .contenido-header {
+    max-width: 1100px;
+    margin: auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#inicio .contenido header .contenido-header h1 {
+    text-align: center;
+    color: floralwhite;
+    font-size: 20px;
+}
+
+#inicio .contenido header .contenido-header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+#inicio .contenido header .contenido-header nav ul li a{
+    text-decoration: none;
+    color:antiquewhite;
+    margin: 0 12px;
+    font-weight: 400;
+    transition: .5s;
+}
+
+#inicio .contenido header .contenido-header nav ul a:hover {
+    color:palevioletred;
+}
+
+#inicio .contenido header .contenido-header .redes a {
+    text-decoration: none;
+    color: antiquewhite;
+    display: inline-block;
+    margin-left: 10px;
+    transition: .5s;
+}
+
+#inicio .contenido header .contenido-header .redes a:hover {
+    color: palevioletred;
+}
+
+#inicio .contenido .presentacion {
+    max-width: 1100px;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#inicio .contenido .presentacion .bienvenida {
+    font-size: 34px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+#inicio .contenido .presentacion h2 {
+    font-size: 55px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+#inicio .contenido .presentacion a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 25px;
+    padding: 20px 25px;
+    border: 2px solid black;
+    border-radius: 50px;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+#inicio .contenido .presentacion a:hover {
+    background-color: palevioletred;
+}
+
+
+/* SECCION SOBRE MI */
+#sobremi {
+    max-width: 1100px;
+    margin: auto;
+    padding:100px 15px;
+    color: black;
+    display: flex;
+}
+
+#sobremi .contenedor-foto {
+    max-width: 400px;
+    margin-right: 80px;
+}
+
+#sobremi .contenedor-foto img {
+    padding: 20px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: #f3f3f3;
+}
+
+#sobremi .sobremi {
+    margin: 0 40px;
+}
+
+#sobremi .sobremi .titulo-seccion {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: Black;
+    text-decoration: underline;
+    text-decoration-color:palevioletred;
+    text-decoration-thickness: 5px;
+}
+
+#sobremi .sobremi h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 20px 0;
+    letter-spacing: 2px;
+}
+
+#sobremi .sobremi h2 span {
+    color: palevioletred;
+}
+
+#sobremi .sobremi h3 {
+    font-size: 25px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+ #sobremi .sobremi p {
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 12px;
+}
+
+.fila {
+    display:flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.fila .titulo-seccion {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: Black;
+    text-decoration: underline;
+    text-decoration-color:palevioletred;
+    text-decoration-thickness: 5px;
+}
+
+.fila .eduyexpe:hover {
+    box-shadow: 5px 5px 10px black, -5px -5px 10px antiquewhite;
+}
+
+.fila .eduyexpe {
+    max-width: 350px;
+    background-color:white;
+    padding: 30px;
+    margin: 0 5px;
+    border-right: 5px;
+    transition: .5s;
+}
+
+.fm {
+    max-width: 1100px;
+    padding: 100px 0;
+    margin: auto;
+}
+
+.fm h3 {
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: Black;
+    text-decoration: underline;
+    text-decoration-color:palevioletred;
+    text-decoration-thickness: 5px;
+}
+
+.fm .fila {
+    display:flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+.fm .fila .lugar {
+    max-width: 450px;
+    border: 1px solid black;
+    margin: 0 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.fm .fila .lugar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.fm .fila .lugar .info {
+    position:absolute;
+    left: 0; 
+    font-size: 20px;
+    background-color:antiquewhite;
+    color:black;
+    width: 100%;
+    padding: 10px;
+    opacity: 0;
+    bottom: -40px;
+    transition: .5s;
+}
+
+.fm .fila .lugar:hover .info {
+    opacity: 1;
+    bottom: 0;
+}
+
+
+/* SECCION SKILLS */
+.habilidades {
+    padding: 100px 0;
+    text-align: center;
+    max-width: 600px;
+    margin: 30px auto;
+   
+}
+.habilidades .contenedor h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: Black;
+    text-decoration: underline;
+    text-decoration-color:palevioletred;
+    text-decoration-thickness: 5px;
+    
+}
+
+.habilidades .contenedor .skills:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.habilidades .contenedor .skills .detalles {
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.habilidades .contenedor .skills .menu {
+    position: relative;
+    border: 1px solid palevioletred;
+    border-radius: 20px;
+}
+
+.habilidades .contenedor .skills .menu div {
+    position:relative;
+    width: 0;
+    height: 8px;
+    border-radius: 10px;
+    background-color: palevioletred;
+}
+/* ANIMACION SKILLS*/
+#genexus-menu{
+    animation: genexus-barra 2s forwards;
+}
+@keyframes genexus-barra {
+    100%{
+        width: 70%;
+    }
+}
+
+#power-menu{
+    animation: power-barra 2s forwards;
+}
+@keyframes power-barra {
+    100%{
+        width: 60%;
+    }
+}
+
+#html-menu{
+    animation: html-barra 2s forwards;
+}
+@keyframes html-barra {
+    100%{
+        width: 50%;
+    }
+}
+
+#css-menu{
+    animation: css-barra 2s forwards;
+}
+@keyframes css-barra {
+    100%{
+        width: 50%;
+    }
+}
+
+#sql-menu{
+    animation: sql-barra 2s forwards;
+}
+@keyframes sql-barra {
+    100%{
+        width: 60%;
+    }
+}
+
+#python-menu{
+    animation: python-barra 2s forwards;
+}
+@keyframes python-barra {
+    100%{
+        width: 60%;
+    }
+}
+
+
+/* SECCION PORTAFOLIO */
+
+
+
+#proyecto .card-header-borderless {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: Black;
+    text-decoration: underline;
+    text-decoration-color:palevioletred;
+    text-decoration-thickness: 5px;
+    background-color: white;
+}
+
+#proyecto .card-body h5 {
+    font-size: 25px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+#proyecto .card-body p {
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 12px;
+
+}
+
+#proyecto .card-body a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 25px;
+    padding: 20px 25px;
+    border: 2px solid black;
+    border-radius: 50px;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+#proyecto .card-body a:hover {
+    background-color: palevioletred;
+}
+
+
+
+/* ########### FOOTER ########## */
+footer {
+    background-color: black;
+    color:antiquewhite;
+    text-align: center;
+    padding: 30px;
+}
+
+footer a {
+    text-decoration: none;
+    color:antiquewhite;
+    display: inline-block;
+    margin: 5px;
+    font-size: 26px;
+}
+
+footer a:hover {
+    color:palevioletred;
+}
